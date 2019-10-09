@@ -74,11 +74,20 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background-image: url("../img/construction.jpg");
+}
+
+.bg-image {
+  background-image: url("../img/construction-1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
+  filter: blur(8px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 header.masthead .masthead-content {
