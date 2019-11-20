@@ -1,7 +1,11 @@
-/*!
- * Start Bootstrap - One Page Wonder v5.0.6 (https://startbootstrap.com/template-overviews/one-page-wonder)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
+
+/* 
+#596670
+rgba(89, 102, 112, 0.9)
+#441824
+rgba(68, 24, 36, 0.9)
+#071838
+rgba(7, 24, 56, 0.9)
  */
 
 body {
@@ -50,7 +54,7 @@ h6 {
 }
 
 .navbar-custom {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(89, 102, 112, 0.9);
   padding: 0 10px;
 }
 
@@ -62,27 +66,38 @@ h6 {
 }
 
 .navbar-custom .navbar-nav .nav-item .nav-link {
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
 
-header.masthead {
+div.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 72px);
-  padding-bottom: 7rem;
+  height: 100vh;
+}
+
+.masthead__logo {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 40%;
 }
 
 .bg-image {
-  background-image: url("../img/construction-1.jpg");
+  /* background-color: #596670; */
+  background: radial-gradient(
+    circle,
+    #596670 0%,
+    #071838 100%
+);
+  /* background-image: url("../img/brand-mark-white.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
-  background-size: cover;
-  filter: blur(8px);
+  background-size: 50%; */
   position: absolute;
   left: 0;
   top: 0;
@@ -90,32 +105,29 @@ header.masthead {
   width: 100%;
 }
 
-header.masthead .masthead-content {
+div.masthead .masthead-content {
   z-index: 1;
   position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-header.masthead .masthead-content .masthead-heading {
+div.masthead .masthead-content .masthead-heading {
   font-size: 4rem;
   line-height: 1.2;
   text-shadow: 0px 0px 2px #fff;
 }
 
-header.masthead .masthead-content .masthead-subheading {
+div.masthead .masthead-content .masthead-subheading {
   font-size: 2rem;
   text-shadow: 0px 0px 2px #fff;
 }
 
 @media (min-width: 992px) {
-  header.masthead {
-    padding-top: calc(10rem + 55px);
-    padding-bottom: 10rem;
-  }
-  header.masthead .masthead-content .masthead-heading {
-
+  div.masthead .masthead-content .masthead-heading {
     font-size: 5rem;
   }
-  header.masthead .masthead-content .masthead-subheading {
+  div.masthead .masthead-content .masthead-subheading {
     font-size: 3rem;
   }
 }
@@ -131,8 +143,8 @@ header.masthead .masthead-content .masthead-subheading {
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #ddd !important;
-  border-color: #ddd !important;
+  background-color: #596670 !important;
+  border-color: #596670 !important;
 }
 
 .btn-primary:focus {
