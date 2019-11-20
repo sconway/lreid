@@ -92,7 +92,7 @@ div.masthead {
   display: block;
   margin: 0 auto;
   height: auto;
-  width: 40%;
+  width: 60%;
 }
 
 .bg-image {
@@ -152,6 +152,10 @@ div.masthead .masthead-content .masthead-subheading {
 @media (min-width: 768px) {
   .btn-primary {
     padding: 1.5rem 3rem;
+  }
+
+  .masthead__logo {
+    width: 40%;
   }
 }
 
